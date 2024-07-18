@@ -1,0 +1,133 @@
+@import 'variables';
+@import 'mixins';
+
+body{
+    @include allZero();
+    @include flex (center, space-between, column);
+}
+
+.template{
+    width: 100vw;
+    height: 20vh;
+    background-color: $color_fondo;
+    @include flex (center, space-evenly);
+    p{
+        width: 30%;
+        text-align: center;
+        color: white;
+        @include font ($fuente_principal, 3rem, 600);
+    }
+    ul{
+        padding: 0;
+        @include flex (center, space-between);
+        @include font ($fuente_principal, 1.9rem, 300);
+        list-style: none;
+        gap: 5rem;
+        a{
+            text-decoration: none;
+            color: $blanco_claro;
+            &:hover{
+                color:white;
+            }
+        }
+    }
+}
+
+h1{
+    color: $color_fondo;
+    @include font ($fuente_principal, 3rem, 600);
+    text-align: center;
+}
+
+table{
+    width: 100vw;
+    @include font ($fuente_principal, 1rem, 300);
+    padding: 1rem;
+    background-color: gainsboro;
+    thead{
+        font-size: 1.5rem;
+        background-color: $color_fondo;
+        color: white;
+        th{
+            padding: 1rem;
+            border-radius: 0.3rem;
+        }
+    }
+    tbody{
+        text-align: center;
+        tr{
+            font-weight: 500;
+            font-size: 1.3rem;
+            background-color: #FCF3CF;
+            td{
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+form{
+    @include font ($fuente_principal, 1.6rem, 400);
+    @include flex (center, space-evenly, column);
+    width: 50%;
+    height: 60%;
+    background-color: $color_fondo;
+    border-radius: 0.5rem;
+    color: white;
+    input{
+        width: 30%;
+        height: 10%;
+        border-radius: 5px;
+        @include font ($fuente_principal, 1.2rem, 400);
+    }
+    button{
+        width: 15%;
+        height: 10%;
+        margin-top: 1rem;
+        background-color: green;
+        color:white;
+        @include font ($fuente_principal, 1.2rem, 600);
+        border: solid 2px greenyellow;
+        border-radius: 20px;
+    }
+}
+
+.form-costos{
+    @include flex (center, space-evenly, column);
+    width: 90%;
+    input{
+        width: 15%;
+        height: 100%;
+        gap: 50%;
+    }
+    button{
+        width: 10%;
+        height: 10%;
+        color: black;
+        background-color: aquamarine;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+    }
+}
+
+.form-venta{
+    @include flex (center, space-evenly, column);
+    width: 90%;
+    input{
+        width: 15%;
+        height: 100%;
+        gap: 50%;
+    }
+    button{
+        width: 10%;
+        height: 10%;
+        color: black;
+        background-color: aquamarine;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+    }
+}
+
+
+
+

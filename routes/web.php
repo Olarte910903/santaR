@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(Controller::class)->group(function (){
+    Route::get('/', 'mostrarIngredientes')->name('inventario');
+    Route::get('compras', 'compras')->name('compras');
+    Route::get('ventas', 'ventas')->name('ventas');
+    Route::get('productos', 'mostrarProductos')->name('productos');
+    Route::get('costos', 'mostrarIngredientesCostos')->name('ingredientesCostos');
+    Route::post('ingresarIngrediente', 'ingresarIngrediente')->name('ingresarIngrediente');
 });

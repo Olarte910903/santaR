@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.template {
+  width: 100vw;
+  height: 20vh;
+  background-color: #154360;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.template p {
+  width: 30%;
+  text-align: center;
+  color: white;
+  font-family: "Gantari", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.template ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Gantari", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 300;
+  list-style: none;
+  gap: 5rem;
+}
+.template ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3137254902);
+}
+.template ul a:hover {
+  color: white;
+}
+
+h1 {
+  color: #154360;
+  font-family: "Gantari", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+table {
+  width: 100vw;
+  font-family: "Gantari", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  background-color: gainsboro;
+}
+table thead {
+  font-size: 1.5rem;
+  background-color: #154360;
+  color: white;
+}
+table thead th {
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+table tbody {
+  text-align: center;
+}
+table tbody tr {
+  font-weight: 500;
+  font-size: 1.3rem;
+  background-color: #FCF3CF;
+}
+table tbody tr td {
+  padding: 0.5rem;
+}
+
+form {
+  font-family: "Gantari", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 60%;
+  background-color: #154360;
+  border-radius: 0.5rem;
+  color: white;
+}
+form input {
+  width: 30%;
+  height: 10%;
+  border-radius: 5px;
+  font-family: "Gantari", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+form button {
+  width: 15%;
+  height: 10%;
+  margin-top: 1rem;
+  background-color: green;
+  color: white;
+  font-family: "Gantari", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: solid 2px greenyellow;
+  border-radius: 20px;
+}
+
+.form-costos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.form-costos input {
+  width: 15%;
+  height: 100%;
+  gap: 50%;
+}
+.form-costos button {
+  width: 10%;
+  height: 10%;
+  color: black;
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+.form-venta {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.form-venta input {
+  width: 15%;
+  height: 100%;
+  gap: 50%;
+}
+.form-venta button {
+  width: 10%;
+  height: 10%;
+  color: black;
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */
