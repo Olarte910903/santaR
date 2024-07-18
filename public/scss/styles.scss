@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'mixins';
 
+
+
 body{
     @include allZero();
     @include flex (center, space-between, column);
@@ -12,7 +14,7 @@ body{
     background-color: $color_fondo;
     @include flex (center, space-evenly);
     p{
-        width: 30%;
+        width: 25%;
         text-align: center;
         color: white;
         @include font ($fuente_principal, 3rem, 600);
